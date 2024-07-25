@@ -2,9 +2,9 @@ const Review = require("../models/Review");//referring to the index in models
 
 const resolvers = {
     Query: {
-        review: async (parent, args, context) => {//put in parent and arguments just to have access to context
-            console.log(parent);//context appears to be the only item producing anything in the console log
-            const review = await Review.findOne( args );//why can't this take in an id? 
+        review: async (parent, args) => {//put in parent and arguments just to have access to context
+//context appears to be the only item producing anything in the console log, although we get the result from args?
+            const review = await Review.findOne(args);//why can't this take in an id? 
             //can only take the very first entry ever created 
             return review;
           },
@@ -19,7 +19,14 @@ const resolvers = {
  
 module.exports = resolvers;
 /**
- * 
+ * const review = await Review.findOne( {_id: args} );
+ *  "message": "Cast to ObjectId failed for value \"{}\" (type Object) at path \"_id\" for model \"Review\""
+ * const review = await Review.find( args._id );
+ * "message": "Cannot return null for non-nullable field Review.description."
+ * const review = await Review.findOne( args(+._id) );
+ * only returns the first document that matches the query condition.
+ * const review = await Review.findOne( { _id: context.authors.reviewId } );
+ * Cannot read properties of undefined (reading 'reviewId
  * const review = await Review.findOne( { _id: context.authors._id } );
  * "message": "Cannot read properties of undefined (reading '_id')
  * const review = await Review.findOne( { context } );
