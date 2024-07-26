@@ -1,15 +1,9 @@
 import React from "react";
 import "../../public/CSS/style.css"
 import DropdownProductReview from "../Accord.Modal";
-import ReviewForm from "../Accordian/reviewForm";//nothing wrong here
+import ReviewForm from "../Accordian/reviewForm";
 import ProductAccordianTemplate from "../Accordian/Accordian.Products";
-import ProductItemization from '../../Pages/Process.Products.jsx/DynamicProducts'; //Error: Response not successful: Received status code 500
-/**
- * [1] AggregateError [ECONNREFUSED]: 
-[1]     at internalConnectMultiple (node:net:1116:18)
-[1]     at internalConnectMultiple (node:net:1184:5)
-[1]     at afterConnectMultiple (node:net:1683:7)
- */
+import ProductItemization from '../../Pages/Process.Products.jsx/DynamicProducts'; 
 
 function WatchesRow(){ 
     return(
@@ -136,7 +130,6 @@ function WatchesRow(){
         </div>
       </div> 
       <div className="swiper-pagination position-absolute text-center"></div>
-      {/** <ProductItemization/>  *} {/** not coming through */}
     </section>
 
     </div>

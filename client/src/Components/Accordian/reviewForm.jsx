@@ -4,7 +4,7 @@ import {ADD_REVIEW} from "../../utils/mutations";
 import { useMutation } from '@apollo/client';
 
 function ReviewForm(product) { //from Accord.Modal (line 14)
-    //console.log(product);//got the names
+    console.log(product);//got the names
     const [addReview, { error }] = useMutation(ADD_REVIEW);
 
 
@@ -100,7 +100,6 @@ function ReviewForm(product) { //from Accord.Modal (line 14)
         </Button>
 </Form>
 </>
-    );//submit button is disabled until the user inputs a review
+    );
 };
 export default ReviewForm;
-//exported to Accord.Modal, which is posted to every hard-coded product. 

@@ -16,6 +16,5 @@ function DropdownProductReview(productName){ //comes from props.header
         </Accordion.Item>
     </Accordion>
     )
-};//{/**this props is being passed back to what it imported */}
+};
 export default DropdownProductReview;
-//exported to Sales, Accordian.Products, indexProduct, and indexProRow

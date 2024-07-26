@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const postReviewSchema = new Schema({
-    product: { //array was objectifying it
+    product: { 
         type: String, 
         required: true 
     },
@@ -16,14 +16,3 @@ const postReviewSchema = new Schema({
 });
 const Review = model('Review', postReviewSchema);
 module.exports=Review;
-/**
- * ,
-{
-    toJSON: {
-      virtuals: true,
-    },
-  });
-
-postReviewSchema.virtual("fullReview").get(function() {
-    return this.authors.join(', ') + ' - ' + this.description;
- */

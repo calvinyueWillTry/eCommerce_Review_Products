@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 function Home() {
     return (
         <div>
-            
+            <p className="home-title">Welcome to our eCommerce website!</p>
             <About/>
 
         </div>

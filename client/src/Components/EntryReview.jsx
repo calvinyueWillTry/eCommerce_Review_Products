@@ -6,7 +6,7 @@ import { useParams, Link } from 'react-router-dom';
 function EntryReview() {
     let { userID } = useParams();
 
-    const [user, setUser] = useState(""); //users only can leave reviews
+    const [user, setUser] = useState(""); 
     const [reviewer, setReviewer] = useState("");
     const [feedback, setFeedback] = useState("");
 
@@ -14,6 +14,7 @@ function EntryReview() {
     <form>  
         <div>
             <p>If you would like to leave a review, please fill out the following to post a review</p>
+            <p>Please do not leave your review here. Leave reviews of the products on the homepage</p>
             <div>
                 <input className="contactus" placeholder="Name*" 
                           type="text" name="Name" value={user} 
