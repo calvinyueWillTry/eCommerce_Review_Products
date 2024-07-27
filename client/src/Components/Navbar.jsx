@@ -9,7 +9,7 @@ function NavigationBar() {
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
               <Navbar.Brand href={"/"}>
                 <Logo/>
-                Group #1 AAAMCYKG Final Project 
+                eCommerce concept website  
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               

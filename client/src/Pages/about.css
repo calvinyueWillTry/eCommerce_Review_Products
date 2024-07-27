@@ -1,0 +1,22 @@
+.home-card{
+    background-color: aqua;
+}
+.home-title{
+    font-size:x-large;
+    text-align: center;
+    font-weight: bolder;
+}
+.about-card{
+    text-align: center;
+}
+.about-text{
+    background-color:blanchedalmond;
+    font-weight: bolder;
+    border-style:groove;
+    
+}
+.about-textName{
+    color: red;
+    font-size: larger;
+   margin-top: 30px;
+}
