@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../Pages/contact.css"
 
 function Contact () {
    const [user, userName] = useState("");//[username, setUsername] convention
@@ -55,29 +56,33 @@ const contactClick = (event) => { //normally handleInput onChange = {calls this 
            <div className="row ">
               <div className="col-md-12">
                  <div className="titlepage text_align_center">
-                    <h2>Contact Us</h2>
+                    <h2 className="subject">Contact Us</h2>
                  </div>
               </div>
               <div className="col-md-6">
                  <form id="request" className="main_form" onSubmit={contactSubmit}>
                     <div className="row">
-                       <div className="col-md-6 "> 
-                          <input className="contactus" placeholder="Name*" 
+                       <div className="col-md-6 texting"> 
+                          <p className='text-box'><input className="contactus" placeholder="Name*" 
                           type="text" name="Name" value={user} 
-                          onChange={contactClick} required/> 
+                          onChange={contactClick} required/> </p>
                        </div>
+                     </div>
+                     <div>
                        <div className="col-md-6"> 
-                          <input className="contactus" placeholder="Phone Number" 
+                         <p className='text-box'><input className="contactus" placeholder="Phone Number" 
                           type="text" name="Phone" value={phone}
-                          onChange={contactClick} />                          
+                          onChange={contactClick} />  </p>                        
                        </div>
-                       <div className="col-md-12">
-                       {/**this is just a subject */}
-                           <input className="contactus" placeholder="Email*"
-                           type="email" name="email" value={email} onChange={contactClick} required/>
-                           <p></p>
-                       <p>Subject </p>          
-                       </div>
+                     </div>
+                     <div>
+                        <div className="col-md-12">
+                           <p className='text-box'><input className="contactus" placeholder="Email*"
+                           type="email" name="email" value={email} onChange={contactClick} required/></p>
+                        </div>
+                     </div>
+                     <div><p className="subject">Subject </p></div>            
+                     <div>
                        <div className="col-md-12 select-outline">
                           <select className="custom-select" name="subject" value={subject} 
                           onChange={contactClick} required>
@@ -88,11 +93,15 @@ const contactClick = (event) => { //normally handleInput onChange = {calls this 
                              <option value="Other">Other</option>
                           </select>
                        </div>
+                     </div>
+                     <div>
                        <div className="col-md-12">
-                          <textarea className="textarea" placeholder="Message" 
+                          <p className='text-box'><textarea className="textarea" placeholder="Please leave your questions and/or comments here*" 
                           type="type" name="text" Message="Name" 
-                          onChange={contactClick} value = {text} required></textarea>
+                          onChange={contactClick} value = {text} required></textarea></p>
                        </div>
+                     </div>
+                     <div>
                        <div className="col-md-12">
                           <button className="send_btn">Send</button>
                        </div>

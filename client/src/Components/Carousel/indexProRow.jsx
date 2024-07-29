@@ -25,12 +25,12 @@ function WatchesRow(){
                   <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 className="card-title text-uppercase">
                       <ProductAccordianTemplate header={"pink watch"} description={"pink and white and petite"} />
-                    </h3> {/** change cart button to be right next to the price */}
+                    </h3> 
                   <div>
                     <span className="item-price text-primary">$870</span>
                     <div className="cart-concern ">
                     <div className="cart-button d-flex">
-                    <button>Add to Cart</button>
+                    <button className="cart-button">Add to Cart</button>
                     </div>
                   </div>
                   </div>    
@@ -52,7 +52,7 @@ function WatchesRow(){
                     <span className="item-price text-primary">$680</span>
                     <div className="cart-concern position-absolute">
                     <div className="cart-button d-flex">
-                    <button>Add to Cart</button>
+                    <button className="cart-button">Add to Cart</button>
                     </div>
                   </div>
                   </div>  
@@ -74,7 +74,7 @@ function WatchesRow(){
                     <span className="item-price text-primary">$750</span>
                     <div className="cart-concern position-absolute">
                     <div className="cart-button d-flex">
-                    <button>Add to Cart</button>
+                    <button className="cart-button">Add to Cart</button>
                     </div>
                   </div>
                   </div>
@@ -96,7 +96,7 @@ function WatchesRow(){
                     <span className="item-price text-primary">$650</span>
                     <div className="cart-concern position-absolute">
                     <div className="cart-button d-flex">
-                    <button>Add to Cart</button>
+                    <button className="cart-button">Add to Cart</button>
                     </div>
                   </div>
                   </div>
@@ -118,7 +118,7 @@ function WatchesRow(){
                     <span className="item-price text-primary">$750</span>
                     <div className="cart-concern position-absolute">
                     <div className="cart-button d-flex">
-                    <button>Add to Cart</button>
+                    <button className="cart-button">Add to Cart</button>
                     </div>
                   </div>
                   </div>

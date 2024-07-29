@@ -1,5 +1,5 @@
 import Accordion from 'react-bootstrap/Accordion';
-
+import "../../public/CSS/shop.css"
 import DropdownProductReview from '../Accord.Modal';
 
 function SalesAccordianTemplate(props) {
@@ -9,15 +9,15 @@ function SalesAccordianTemplate(props) {
       <Accordion.Item eventKey="0">
         <Accordion.Header>{props.header}</Accordion.Header>
         <Accordion.Body>
-        {props.oldPrice}
+        <p className='review-text'>{props.oldPrice}</p>
         <p></p>
-          {props.discount} 
+          <p className='review-text'>{props.discount} </p>
           <p></p>
 
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item>
-        <DropdownProductReview productName={props.header}/>
+        <DropdownProductReview className='review-text' productName={props.header}/>
       </Accordion.Item>
     </Accordion>
   );//{/** defined from Accord.Model line 14 */}

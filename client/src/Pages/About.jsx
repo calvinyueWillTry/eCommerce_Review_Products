@@ -27,10 +27,10 @@ function About() {
             
             
             <div>
-                <p className="about-text">This is the other rendition of our eCommerce Website (it works on the setting local host)</p>
-                <p><a href="https://github.com/Austin-Marlatt/E-Commerce-Website" target='_blank'> Click this link to see the Github for our other rendition!</a></p>
-                <p><a href="https://e-commerce-website-oryj.onrender.com/shop" target='_blank'> Click this link to see our other rendition!</a></p>
-                <p className="about-button"><Button href="/shop" className="about-text"> Let's go Shopping!</Button></p>
+                <p className="about-rendition">This is the other rendition of our eCommerce Website (it works on the setting local host)</p>
+                <p><a href="https://github.com/Austin-Marlatt/E-Commerce-Website" target='_blank' className="about-text"> Click this link to see the Github for our other rendition!</a></p>
+                <p><a href="https://e-commerce-website-oryj.onrender.com/shop" target='_blank' className="about-text"> Click this link to see our other rendition!</a></p>
+                <p className="about-button"><Button href="/shop" className="shop-button"> Let's go Shopping!</Button></p>
             </div>
             
         </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Alert } from "react-bootstrap";
 import {ADD_REVIEW} from "../../utils/mutations";
 import { useMutation } from '@apollo/client';
+import "../../public/CSS/shop.css"
 
 function ReviewForm(product) { //from Accord.Modal (line 14)
     console.log(product);//got the names
@@ -59,7 +60,7 @@ function ReviewForm(product) { //from Accord.Modal (line 14)
     </Alert>
 
     <Form.Group className='mb-3'>
-        <Form.Label htmlFor="authors">
+        <Form.Label htmlFor="authors" className='review-text'>
             Please enter your name.
         </Form.Label>
             <Form.Control type="text"
@@ -69,7 +70,7 @@ function ReviewForm(product) { //from Accord.Modal (line 14)
         value={userName.authors}
         required>
             </Form.Control>
-        <Form.Label htmlFor="description">
+        <Form.Label htmlFor="description" className='review-text'>
             Please input your review on this product. 
         </Form.Label> 
          <Form.Control
@@ -89,10 +90,8 @@ function ReviewForm(product) { //from Accord.Modal (line 14)
         type="invalid">
             You are required to enter your Password.
         </Form.Control.Feedback>
-
     </Form.Group>
-
-        <Button
+        <Button className='review-button'
         disabled={!(userFormationData.description)}
         type="submit"
         variant="success" >

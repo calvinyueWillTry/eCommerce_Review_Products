@@ -23,3 +23,11 @@
     font-size: 50px;
     font-weight: bold; 
 }
+.review-text{
+    font-size: larger;
+    font-weight: bolder;
+}
+.review-button{
+    background-color: blue;
+    font-weight:bolder;
+}

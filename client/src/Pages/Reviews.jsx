@@ -1,18 +1,19 @@
 import React from "react";
 import Blogging from "../Components/Carousel/Blog";
-//import Modal from "../Components/Modal";
 import EntryReview from "../Components/EntryReview";
-//need to send the strings (in variable form) to the backend. Test it with graphql, then take the successful "Table" and add it to mutations.js
-function Reviews() { //reviewForm (week 21 challenge)
+import "../Pages/contact.css";
+
+function Reviews() { 
 
     return (
         <div>
-            <img src="/src/public/images/banner-image.png" />
             
             <Blogging/>
             <EntryReview/>
+            <div className="prev-review-button">
+            <button ><p className="prev-text"> Submit Your Review </p></button>
+            </div>
             
-            <button >Submit Your Review</button>
         </div>
     )
 };//button needs to get to backend (mutations.js)

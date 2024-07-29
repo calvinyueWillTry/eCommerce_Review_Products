@@ -1,0 +1,39 @@
+.contact{
+    background-color: orange;
+    
+}
+.container{
+    text-align: center;
+}
+.row{
+    text-align: center;
+}
+.titlepage{
+    font-size: larger;
+    text-align: center;
+}
+.subject{
+    text-align: center;
+    font-size:xx-large;
+    
+}
+.contactus{
+    font-size: larger;
+}
+.text-box{
+    text-align: center;
+}
+.custom-select{
+    margin-bottom: 30px;
+}
+.textarea{
+    font-size: larger;
+    width: 450px;
+    height: 250px;
+}
+.prev-review-button{
+    text-align: center;
+}
+.prev-text{
+    font-size:larger;
+}

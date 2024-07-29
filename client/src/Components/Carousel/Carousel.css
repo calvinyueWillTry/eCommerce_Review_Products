@@ -2,6 +2,34 @@
     color: red;
 }
 .review-carousel{
-    background-color: blue;
+    margin-top: 20px;
+    background-color:chocolate;
     height: 50%;
+}
+.blog-text{
+    color: black;
+    font-size:xx-large;
+    text-align: center;
+    background-color: aliceblue;
+}
+.blog-author{
+    color:black;
+    font-size: x-large;
+    text-align: center;
+    background-color: aliceblue;
+}
+.review-form{
+    text-align: center;
+    background-color: burlywood;
+}
+.texting{
+    text-align: center;
+}
+.review-site{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.review-input{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

@@ -9,7 +9,7 @@ function DropdownProductReview(productName){ //comes from props.header
     return ( 
     <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-            <Accordion.Header>See previous reviews of this product!</Accordion.Header>
+            <Accordion.Header>Enter a review of this product!</Accordion.Header>
             <Accordion.Body>
                 <ReviewForm product={productName}/>
             </Accordion.Body>
