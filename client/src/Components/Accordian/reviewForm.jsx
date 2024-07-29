@@ -8,7 +8,6 @@ function ReviewForm(product) { //from Accord.Modal (line 14)
     console.log(product);//got the names
     const [addReview, { error }] = useMutation(ADD_REVIEW);
 
-
     const [userName, setUserName] = useState({authors:""});//takes in user's name
     const [userFormationData, setUserFormationData] = useState({description:""});//store the user's review input
     const [validation] = useState(false);//manage form validation
