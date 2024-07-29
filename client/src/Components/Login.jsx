@@ -1,12 +1,14 @@
 import React from "react";
 import { useState } from 'react';
+import "./footer.css";
+
 function Login () {
 return(
-    <div>
-        <p>Enter your username</p>
-        <input name="username"/>
-        <p>Enter your password</p>
-        <input name="password"/>
+    <div className="login-form">
+        <p className="login-username">Enter your username</p>
+        <input className="login-textbox" name="username"/>
+        <p className="login-username">Enter your password</p>
+        <input className="login-textbox" name="password"/>
     </div>
 )
 }; //need mutations file

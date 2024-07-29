@@ -7,3 +7,20 @@
 .row{
     background-color:bisque;
 }
+.login-form{
+    text-align: center;
+    background-color: cadetblue;
+}
+.login-username{
+    color: aliceblue;
+    font-size: larger;
+}
+.login-textbox{
+    margin-bottom: 20px;
+}
+.signup-button{
+    text-align: center;
+    font-size: larger;
+    font-weight:bolder;
+    margin-bottom: 20px;
+}

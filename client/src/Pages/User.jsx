@@ -1,11 +1,13 @@
 import React from "react";
 import Registration from "./Signup";
 import Login from "../Components/Login";
+import "../Components/footer.css"
+
 function Users() {
     return (
-        <div>
+        <div className="login-form">
             
-            <p>Already a user?</p>
+            <p className="login-username">Already a user?</p>
             <Login/>
         </div>
     )
